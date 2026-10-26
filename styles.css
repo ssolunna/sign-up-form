@@ -121,7 +121,7 @@ a:hover {
 .form-row input {
     font-size: 0.8rem;
     background-color: #FFFFFF;
-    border: 1px solid #D6D9DC;
+    border: 1px solid #E5E7EB;
     border-radius: 4px;
     padding: 3px;
 }
@@ -131,15 +131,23 @@ a:hover {
     font-weight: bold;
     color: #FFFFFF;
     background-color: #596D48;
-
+    
     border: none;
     border-radius: 8px;
     box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.10);
-
+    
     margin-top: 30px;
     margin-left: 30px;
     padding: 10px 40px;
     cursor: pointer;
+}
+
+.form-section button:hover {
+    background-color: #596d48e7;
+}
+
+.form-section button:focus {
+    background-color: #546744;
 }
 
 .form-section > p:last-of-type {
@@ -152,4 +160,20 @@ a:hover {
     font-weight: bold;
     color: #596D48;
     cursor: pointer;
+}
+
+.form-row input {
+    box-shadow: none; /* Remove default red glow in Firefox */
+    outline: none; /* Remove default focus border */
+}
+
+.form-row input:focus {
+    border: 1px solid blue;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.10);
+}
+
+.form-row input[type='password']:user-invalid,
+.form-row input[type='email']:user-invalid {
+    border: 1px solid #D55C5F;
+    color: #D55C5F;
 }
